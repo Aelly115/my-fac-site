@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chia-Lin Chen | FAC System</title>
+    <style>
+        :root {
+            --warm-orange: #e67e22;
+            --amber: #f39c12;
+            --cream: #fffaf0;
+            --text-dark: #2c3e50;
+            --academic-blue: #34495e;
+        }
+
+        body {
+            font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+            background-color: var(--cream);
+            color: var(--text-dark);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--warm-orange), var(--amber));
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--academic-blue);
+            font-weight: bold;
+            margin: 0 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: -50px auto 50px;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--warm-orange);
+            border-bottom: 2px solid var(--cream);
+            padding-bottom: 10px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        .quote-box {
+            background: #fdf2e9;
+            border-left: 5px solid var(--warm-orange);
+            padding: 25px;
+            margin: 30px 0;
+            font-size: 1.15rem;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 25px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .doi-tag {
+            background: #f0f0f0;
+            font-size: 0.75rem;
+            padding: 3px 10px;
+            border-radius: 20px;
+            color: var(--grey);
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .statement-box {
+            margin-top: 60px;
+            padding: 40px;
+            background-color: #fdf2e9;
+            border-radius: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 40px;
+            font-size: 0.9rem;
+            color: #999;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">首頁 Home</a>
+    <a href="archive.html">論文存檔 Archive</a>
+</nav>
+
+<header>
+    <h1>Chia-Lin Chen</h1>
+    <p>Personality is not discovered. It is installed.</p>
+</header>
+
+<div class="container">
+    <div class="quote-box">
+        「人格並非固定特質，而是語言能否在心智中執行所形成的結果。行為問題並非源自價值觀缺陷，而是語言容量不足。」
+    </div>
+
+    <h2 class="section-title">核心實踐計畫</h2>
+    <div class="grid">
+        <div class="card">
+            <span class="doi-tag">DOI: 10.5281/zenodo.17786060</span>
+            <h3>A2PR 模型</h3>
+            <p>人工智慧雙階段人格重建模型，探討語言安裝如何修補人格缺損，重建自我執行能力。</p>
+        </div>
+        <div class="card">
+            <span class="doi-tag">DOI: 10.5281/zenodo.18029328</span>
+            <h3>提案牆：家庭民主</h3>
+            <p>透過空間介面重構家中的權力動態，讓家成為民主實踐的主要場景。</p>
+        </div>
+        <div class="card">
+            <h3>留愛之書</h3>
+            <p>探討生命傳承與告別準備的觀念藝術，將記憶與未竟之言匯集成有形的檔案。</p>
+        </div>
+    </div>
+
+    <div class="statement-box">
+        <h2 style="color: var(--warm-orange); text-align: center;">藝術家聲明 Artist Statement</h2>
+        <p style="text-align: justify; margin-bottom: 25px;">
+            作為一名母親、研究者與行為架構師，我將「家庭」視為當代文化生產的最小單位。我的實踐核心在於揭示：人格並非天賦，而是語言能否在心智中被執行的結果。透過 <strong>A2PR</strong> 模型與 <strong>FAC</strong> 系統，我嘗試將日常溝通轉譯為精確的語法工程，證明私密的家庭空間也能成為民主實驗的前線。
+        </p>
+        <p style="text-align: justify; font-style: italic; color: #7f8c8d; border-top: 1px solid var(--warm-orange); padding-top: 20px;">
+            "As a mother and behavioral architect, I define 'Family' as the site for personality construction. Through the <strong>A2PR</strong> model, I translate domestic interactions into linguistic engineering, demonstrating that the domestic sphere can serve as a frontier for democratic experimentation."
+        </p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Chia-Lin Chen | FAC: Family as Practice Project<br>
+    All research archived via Zenodo DOI System
+</footer>
+
+</body>
+</html>
